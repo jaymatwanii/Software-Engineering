@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// Define structure for Employee
+struct Employee {
+    int empno;
+    char empname[50];
+    char address[100];
+    int age;
+};
+
+int main() {
+    struct Employee emp;  // Declare structure variable for one employee
+
+    // Taking input from user
+    printf("Enter employee number: ");
+    scanf("%d", &emp.empno);
+    printf("Enter employee name: ");
+    scanf("%s", emp.empname);
+    printf("Enter employee address: ");
+    scanf("%s", emp.address);
+    printf("Enter employee age: ");
+    scanf("%d", &emp.age);
+
+    // Displaying employee details
+    printf("\nEmployee Details:\n");
+    printf("Employee Number: %d\n", emp.empno);
+    printf("Employee Name: %s\n", emp.empname);
+    printf("Employee Address: %s\n", emp.address);
+    printf("Employee Age: %d\n", emp.age);
+
+    return 0;
+}
+
